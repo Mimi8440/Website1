@@ -1,0 +1,314 @@
+:root {
+    --main-color: #36d436fa;
+    --second-color: #ff7b00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    background-color: var(--main-color);
+    width: 100vw;
+}
+
+.contact .call {
+    display: flex;
+    gap: 20px;
+}
+
+.contact .call .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact .call .phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact .call h3 {
+    color: white;
+    font-size: 15px;
+}
+
+.contact .call .fa-solid {
+    color: white;
+}
+
+.contact .social .fa-brands {
+    color: white;
+    padding: 0 10px;
+}
+
+
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto 5px;
+}
+
+.navbar .container .logo img {
+    width: 270px;
+    object-fit:cover;
+
+}
+
+.navbar .container .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar .container .recherche .fa-solid {
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+
+.menu .nav {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    background-color: var(--second-color);
+    padding: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.menu ul li .active {
+    color: black;
+
+}
+
+
+.home .container {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 40px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .container .text{
+    width:50%
+}
+
+.home .container .image{
+    margin: 30px 100px 20px 0;
+    position: relative;
+
+}
+
+.home .container img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.home .container .image::after{
+content: '';
+position: absolute;
+top: -15px;
+right:-30px;
+height:calc(100% + 30px);
+width: 200px;
+background-color: red;
+z-index: -1;
+border-radius: 20px;
+}
+
+.home .container .text h1{
+    color: #1838e9;
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+.home .container .text h1 span {
+   border-bottom: 8px solid var(--second-color);
+   padding-bottom: 5px;
+}
+
+.home .container .text p{
+    line-height: 1.8;
+    color: #777;
+    font-size: 12px;
+    width:320px;
+    margin: 30px 0;
+}
+
+.home .container .btn{
+    display: flex;
+    gap: 5px;
+    padding: 15px 10px;
+    background-color: red;
+    width: fit-content;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.home .container .btn h4{
+    color: white;
+}
+
+.home .container .btn .fa-solid{
+    color: white;
+}
+
+.home .container .image .image3{
+    transform: translate(-30px , 50px);
+}
+
+.pet{
+    width: 50px;
+    z-index: -2;
+    position: absolute;
+    opacity: 0.1;
+}
+
+.pet1{
+    top: 50%;
+    left: 50%;
+    transform: rotate(20deg);
+
+}
+
+.pet2 {
+    top: 70%;
+    left: 30%;
+    transform: rotate(30deg);
+}
+
+.pet3 {
+    top: 60%;
+    left: 20%;
+    transform: rotate(20deg);
+
+}
+
+.pet4 {
+    top: 50%;
+    left: 0;
+    transform: rotate(20deg);
+
+}
+.pet5 {
+    top: 60%;
+    left: 50px;
+    transform: rotate(20deg);
+
+}
+
+.pet6 {
+    top: 50%;
+    right: 10px;
+    transform: rotate(20deg);
+
+}
+
+.pet7 {
+    top: 70%;
+    right: 20px;
+    transform: rotate(60deg);
+}
+
+.pet8 {
+    top: 45%;
+    right: 80%;
+    transform: rotate(30deg);
+}
+.pet8 {
+    top: 80%;
+    right: 80%;
+    transform: rotate(20deg);
+}
+
+.pet9 {
+    top: 60%;
+    right: 60%;
+    transform: rotate(90deg);
+}
+
+.pet10 {
+    top: 60%;
+    right: 70%;
+    transform: rotate(80deg);
+}
+
+.pet11 {
+    top: 80%;
+    right: 50px;
+    transform: rotate(150deg);
+}
+
+
+.pet12 {
+    top: 70%;
+    right: 50%;
+    transform: rotate(30deg);
+}
+.pet13 {
+    bottom: 10%;
+    right: 50%;
+    transform: rotate(20deg);
+}
+.pet14 {
+    bottom:5%;
+    right: 60%;
+    transform: rotate(20deg);
+}
+.pet15 {
+    bottom: 30%;
+    right: 50%;
+    transform: rotate(50deg);
+}
